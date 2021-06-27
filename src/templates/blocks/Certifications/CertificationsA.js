@@ -17,7 +17,7 @@ const CertificationItem = ({ item, language }) => (
       )}
     </div>
     {item.summary && (
-      <ReactMarkdown className="markdown mt-2 text-sm" source={item.summary} />
+      <u><ReactMarkdown className="markdown text-left text-sm" source={item.summary} /></u>
     )}
   </div>
 );

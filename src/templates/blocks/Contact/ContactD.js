@@ -10,9 +10,9 @@ const ContactItem = ({ value, label, link }) =>
     <div className="flex flex-col">
       <h6 className="capitalize font-semibold">{label}</h6>
       {link ? (
-        <a href={link} target="_blank" rel="noopener noreferrer">
+        <u><a href={link} target="_blank" rel="noopener noreferrer">
           <span className="font-medium break-all">{value}</span>
-        </a>
+        </a></u>
       ) : (
         <span className="font-medium break-all">{value}</span>
       )}

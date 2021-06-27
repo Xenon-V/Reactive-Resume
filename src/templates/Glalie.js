@@ -61,9 +61,9 @@ const Glalie = ({ data }) => {
           backgroundColor: data.metadata.colors.background,
         }}
       >
-        <div className="grid grid-cols-12">
+        <div className="grid grid-cols-10">
           <div
-            className="col-span-4"
+            className="col-span-3"
             style={{
               backgroundColor: `rgba(${r}, ${g}, ${b}, 0.1)`,
             }}
@@ -80,7 +80,7 @@ const Glalie = ({ data }) => {
             </div>
           </div>
 
-          <div className="col-span-8">
+          <div className="col-span-7">
             <div className="grid gap-4 p-8">
               {layout[1] &&
                 layout[1].map((x) => {

@@ -1,5 +1,5 @@
 const fontSizeOptions = {
-  '--text-xs-size': 0.75,
+  '--text-xs-size': 0.80,
   '--text-sm-size': 0.875,
   '--text-lg-size': 1.125,
   '--text-xl-size': 1.25,

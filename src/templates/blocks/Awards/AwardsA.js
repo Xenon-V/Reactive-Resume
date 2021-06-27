@@ -9,6 +9,9 @@ const AwardItem = ({ item, language }) => (
       <div className="flex flex-col text-left mr-2">
         <h6 className="font-semibold text-sm">{item.title}</h6>
         <span className="text-xs">{item.awarder}</span>
+        {item.summary && (
+          <ReactMarkdown className="markdown text-sm" source={item.summary} />
+        )}
       </div>
       {item.date && (
         <h6 className="text-xs font-medium text-right">
@@ -16,9 +19,6 @@ const AwardItem = ({ item, language }) => (
         </h6>
       )}
     </div>
-    {item.summary && (
-      <ReactMarkdown className="markdown mt-2 text-sm" source={item.summary} />
-    )}
   </div>
 );
 

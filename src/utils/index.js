@@ -42,7 +42,7 @@ export const scaler = (value) => {
 };
 
 export const formatDate = ({ date, language = 'en', includeDay = false }) => {
-  const template = includeDay ? 'DD MMMM YYYY' : 'MMMM YYYY';
+  const template = includeDay ? 'DD MMM YYYY' : 'MMM YYYY';
 
   return dayjs(date).locale(language.substr(0, 2)).format(template);
 };
@@ -50,10 +50,10 @@ export const formatDate = ({ date, language = 'en', includeDay = false }) => {
 export const formatDateRange = ({ startDate, endDate, language = 'en' }, t) => {
   const start = `${dayjs(startDate)
     .locale(language.substr(0, 2))
-    .format('MMMM YYYY')}`;
+    .format('MMM YYYY')}`;
 
   const end = dayjs(endDate).isValid()
-    ? `${dayjs(endDate).locale(language.substr(0, 2)).format('MMMM YYYY')}`
+    ? `${dayjs(endDate).locale(language.substr(0, 2)).format('MMM YYYY')}`
     : t('shared.forms.present');
 
   return `${start} - ${end}`;

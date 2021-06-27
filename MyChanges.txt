@@ -1,0 +1,1 @@
+For print go to -> http://localhost:8000/r/{resumeID} e.g. http://localhost:8000/r/12341
